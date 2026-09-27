@@ -7,10 +7,11 @@ namespace Lab3
         public int Task1(int n, int r1, int r2)
         {
             int count = 0;
-
-            // code here
-
-            // end
+        int count = 0;
+    
+        n = abe;
+    
+        return count;
 
             return count;
         }
