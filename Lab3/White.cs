@@ -9,7 +9,14 @@ namespace Lab3
             double averageHeight = 0;
 
             // code here
-
+            double s = 0;
+            double h = 0;
+            for (int i=0; i<n; i++)
+            {
+                double.TryParse(Console.ReadLine(), out h);
+                s = s + h;
+            }
+            averageHeight = s / n;
             // end
 
             return averageHeight;
@@ -19,7 +26,20 @@ namespace Lab3
             double bestResult = 0;
 
             // code here
-
+            double r = 0;
+            for (int i=0; i<n; i++)
+            {
+                double.TryParse(Console.ReadLine(), out r);
+                if (i == 0)
+                {
+                    bestResult = r;
+                }
+                if (r < bestResult)
+                {
+                    bestResult = r;
+                }
+            }
+            
             // end
 
             return bestResult;
@@ -29,7 +49,15 @@ namespace Lab3
             int count = 0;
 
             // code here
-
+            double r = 0;
+            for (int i =0; i<n; i++)
+            {
+                double.TryParse(Console.ReadLine(), out r);
+                if (r <= limit)
+                {
+                    count++;
+                }
+            }
             // end
 
             return count;
@@ -39,6 +67,21 @@ namespace Lab3
             int hours = 0;
 
             // code here
+            int amount = 0;
+            int.TryParse(Console.ReadLine(), out amount);
+            while (amount < maxAmount)
+            {
+                if (hours % 5 != 4)
+                {
+                    amount += 1;
+                }
+                else
+                {
+                    amount -= 2;
+                }
+                hours++;
+               
+            }
 
             // end
 
@@ -49,6 +92,19 @@ namespace Lab3
             double area = 0;
 
             // code here
+            switch (type)
+            {
+                case 1:
+                    area = r * r;
+                    break;
+                    case 2:
+                    area = r * r * Math.PI;
+                    break;
+                    case 3:
+                    area = Math.Sqrt(3) / 4 * r * r;
+                    break;
+            }
+
 
             // end
 
