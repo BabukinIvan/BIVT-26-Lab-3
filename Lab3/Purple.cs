@@ -32,17 +32,13 @@ namespace Lab3
             int s = 0;
             for (int i = 0; i < n; i++)
             {
-                bool f = false;
-                for (int j = 0; j < 4; j++)
-                {
-                    int x = int.Parse(Console.ReadLine());
-                    s += x;
-                    if (x == 2)
-                    {
-                        f = true;
-                    }
-                }
-                if (f)
+                int a = int.Parse(Console.ReadLine());
+                int b = int.Parse(Console.ReadLine());
+                int c = int.Parse(Console.ReadLine());
+                int d = int.Parse(Console.ReadLine());
+
+                s += a + b + c + d;
+                if (a == 2 || b == 2 || c == 2 || d == 2)
                 {
                     count++;
                 }
