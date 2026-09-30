@@ -41,9 +41,40 @@ namespace Lab3
             string solution = "Код не подобран";
             int attempts = 0;
 
-            // code here
-
-            // end
+            int c1 = code / 100;
+            int c2 = code / 10 % 10;
+            int c3 = code % 10;
+            while (attempts < limit)
+            {
+                attempts += 1;
+                int a1 = int.Parse(Console.ReadLine());
+                if (a1 == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
+            
+                int a2 = int.Parse(Console.ReadLine());
+                if (a2 == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
+            
+                int a3 = int.Parse(Console.ReadLine());
+                if (a3 == -1)
+                {
+                    solution = "Аварийный выход!";
+                    break;
+                }
+            
+                if (a1 == c1 && a2 == c2 && a3 == c3)
+                {
+                    solution = "Доступ разрешен!";
+                    break;
+                }
+            }
+            if (solution == "Код не подобран") solution = "Система заблокирвоана!";
 
             return (solution, attempts);
         }
