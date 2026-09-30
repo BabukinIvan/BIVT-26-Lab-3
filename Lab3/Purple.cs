@@ -82,9 +82,26 @@ namespace Lab3
         {
             double luck = 0;
 
-            // code here
-
-            // end
+            for (int i = 0; i < n; i++)
+            {
+                switch (a)
+                {
+                    case 1: case 8: case 15: case 22: case 29:
+                        if (luck * 1.5 < 100) luck *= 1.5; else luck = 100;
+                            break;
+                    case 4: case 11: case 18: case 25:
+                        if (luck - 10 > 0) luck -= 10; else luck = 0;
+                        break;
+                    case 7: case 14: case 21: case 28:
+                        if (luck < 50) luck = 55;
+                        break;
+                    default:
+                        luck += 5;
+                        break;
+                }
+                a++;
+                if (a > 30) a = 1;
+            }
 
             return luck;
         }
