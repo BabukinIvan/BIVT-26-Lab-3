@@ -6,15 +6,15 @@ namespace Lab3
     {
         public static void Main()
         {
-            // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
-            // CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
             // Console.WriteLine("\nTest white league\n");
             // TestWhite();
             // Console.WriteLine("\nTest green league\n");
             // TestGreen();
-            // Console.WriteLine("\nTest blue league\n");
-            // TestBlue();
+            Console.WriteLine("\nTest blue league\n");
+            TestBlue();
             // Console.WriteLine("\nTest purple league\n");
             // TestPurple();
         }
@@ -102,47 +102,47 @@ namespace Lab3
         }
         private static void TestBlue()
         {
-            // var blue = new Blue();
-            // Console.WriteLine($"Task1 test 1 {blue.Task1(0, 200, 30) == 0}");
-            // Console.WriteLine($"Task1 test 2. Paste 5 inputs");
-            // Console.WriteLine($"Task1 test 2 {blue.Task1(5, 200, 30) == 0.6}");
-            // Console.WriteLine($"Task1 test 3. Paste 5 inputs");
-            // Console.WriteLine($"Task1 test 3 {blue.Task1(5, 250, 30) == 0.75}");
-            // Console.WriteLine($"Task1 test 4. Paste 10 inputs");
-            // Console.WriteLine($"Task1 test 4 {blue.Task1(10, 200, 30) == 1.2}");
-            // Console.WriteLine($"Task1 test 5. Paste 10 inputs");
-            // Console.WriteLine($"Task1 test 5 {blue.Task1(10, 200, 25) == 0.4}");
+            var blue = new Blue();
+            //Console.WriteLine($"Task1 test 1 {blue.Task1(0, 200, 30) == 0}");
+            //Console.WriteLine($"Task1 test 2. Paste 5 inputs");
+            //Console.WriteLine($"Task1 test 2 {blue.Task1(5, 200, 30) == 0.6}");
+            //Console.WriteLine($"Task1 test 3. Paste 5 inputs");
+            //Console.WriteLine($"Task1 test 3 {blue.Task1(5, 250, 30) == 0.75}");
+            //Console.WriteLine($"Task1 test 4. Paste 10 inputs");
+            //Console.WriteLine($"Task1 test 4 {blue.Task1(10, 200, 30) == 1.2}");
+            //Console.WriteLine($"Task1 test 5. Paste 10 inputs");
+            //Console.WriteLine($"Task1 test 5 {blue.Task1(10, 200, 25) == 0.4}");
 
-            // Console.WriteLine($"Task2 test 1 {blue.Task2(0) == (0, 0, 0, 0)}");
-            // Console.WriteLine($"Task2 test 2. Paste 2 inputs");
-            // Console.WriteLine($"Task2 test 2 {blue.Task2(1) == (1, 0, 0, 0)}");
-            // Console.WriteLine($"Task2 test 3. Paste 4 inputs");
-            // Console.WriteLine($"Task2 test 3 {blue.Task2(2) == (1, 0, 0, 0)}");
-            // Console.WriteLine($"Task2 test 4. Paste 10 inputs");
-            // Console.WriteLine($"Task2 test 4 {blue.Task2(5) == (1, 1, 1, 0)}");
-            // Console.WriteLine($"Task2 test 5. Paste 20 inputs");
-            // Console.WriteLine($"Task2 test 5 {blue.Task2(10) == (4, 2, 1, 0)}");
+            //Console.WriteLine($"Task2 test 1 {blue.Task2(0) == (0, 0, 0, 0)}");
+            //Console.WriteLine($"Task2 test 2. Paste 2 inputs");
+            //Console.WriteLine($"Task2 test 2 {blue.Task2(1) == (1, 0, 0, 0)}");
+            //Console.WriteLine($"Task2 test 3. Paste 4 inputs");
+            //Console.WriteLine($"Task2 test 3 {blue.Task2(2) == (1, 0, 0, 0)}");
+            //Console.WriteLine($"Task2 test 4. Paste 10 inputs");
+            //Console.WriteLine($"Task2 test 4 {blue.Task2(5) == (1, 1, 1, 0)}");
+            //Console.WriteLine($"Task2 test 5. Paste 20 inputs");
+            //Console.WriteLine($"Task2 test 5 {blue.Task2(10) == (4, 2, 1, 0)}");
 
-            // Console.WriteLine($"Task3 test 1 {blue.Task3(0) == 0}");
-            // Console.WriteLine($"Task3 test 2. Paste 4 inputs");
-            // Console.WriteLine($"Task3 test 2 {blue.Task3(1) == 0}");
-            // Console.WriteLine($"Task3 test 3. Paste 8 inputs");
-            // Console.WriteLine($"Task3 test 3 {blue.Task3(2) == 1}");
-            // Console.WriteLine($"Task3 test 4. Paste 20 inputs");
-            // Console.WriteLine($"Task3 test 4 {blue.Task3(5) == 3}");
-            // Console.WriteLine($"Task3 test 5. Paste 40 inputs");
-            // Console.WriteLine($"Task3 test 5 {blue.Task3(10) == 4}");
+            //Console.WriteLine($"Task3 test 1 {blue.Task3(0) == 0}");
+            //Console.WriteLine($"Task3 test 2. Paste 4 inputs");
+            //Console.WriteLine($"Task3 test 2 {blue.Task3(1) == 0}");
+            //Console.WriteLine($"Task3 test 3. Paste 8 inputs");
+            //Console.WriteLine($"Task3 test 3 {blue.Task3(2) == 1}");
+            //Console.WriteLine($"Task3 test 4. Paste 20 inputs");
+            //Console.WriteLine($"Task3 test 4 {blue.Task3(5) == 3}");
+            //Console.WriteLine($"Task3 test 5. Paste 40 inputs");
+            //Console.WriteLine($"Task3 test 5 {blue.Task3(10) == 4}");
 
-            // Console.WriteLine($"Task4 test 1. Insert input until the task completes");
-            // Console.WriteLine($"Task4 test 1 {blue.Task4(0, 0) == (0, 12)}");
-            // Console.WriteLine($"Task4 test 2. Insert input until the task completes");
-            // Console.WriteLine($"Task4 test 2 {blue.Task4(700, 0) == (0, 7)}");
-            // Console.WriteLine($"Task4 test 3. Insert input until the task completes");
-            // Console.WriteLine($"Task4 test 3 {blue.Task4(0, 22) == (0, 1)}");
-            // Console.WriteLine($"Task4 test 4. Insert input until the task completes");
-            // Console.WriteLine($"Task4 test 4 {blue.Task4(100, 10) == (0, 9)}");
-            // Console.WriteLine($"Task4 test 5. Insert input until the task completes");
-            // Console.WriteLine($"Task4 test 5 {blue.Task4(0, 35) == (12, 0)}");
+            Console.WriteLine($"Task4 test 1. Insert input until the task completes");
+            Console.WriteLine($"Task4 test 1 {blue.Task4(0, 0) == (0, 12)}");
+            Console.WriteLine($"Task4 test 2. Insert input until the task completes");
+            Console.WriteLine($"Task4 test 2 {blue.Task4(700, 0) == (0, 7)}");
+            Console.WriteLine($"Task4 test 3. Insert input until the task completes");
+            Console.WriteLine($"Task4 test 3 {blue.Task4(0, 22) == (0, 1)}");
+            Console.WriteLine($"Task4 test 4. Insert input until the task completes");
+            Console.WriteLine($"Task4 test 4 {blue.Task4(100, 10) == (0, 9)}");
+            Console.WriteLine($"Task4 test 5. Insert input until the task completes");
+            Console.WriteLine($"Task4 test 5 {blue.Task4(0, 35) == (12, 0)}");
         }
         private static void TestPurple()
         {

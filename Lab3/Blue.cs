@@ -34,7 +34,7 @@
                 if (x > 0 && y > 0) first++;
                 else if (x < 0 && y > 0) second++;
                 else if (x < 0 && y < 0) third++;
-                else fourth++;
+                else if (x > 0 && y < 0) fourth++;
             }
             // end
 
@@ -62,22 +62,23 @@
             int serias = 0;
 
             // code here
-            int seriasTime;
-            int taskTIme = 10;
+            serias = 10;
+            int taskTime = 10;
             serias = 0;
-            while (true)
+            while(true)
             {
-                if (time < 24.0)
+                if (time < 1440)
                 {
                     if (tasks > 0)
                     {
-                        time += taskTIme;
-                        taskTIme += 5;
+                        time += taskTime;
+                        taskTime += 5;
                         tasks--;
                     }
                     else
                     {
-                        time += int.Parse(Console.ReadLine());
+                        int seriasTime = int.Parse(Console.ReadLine());
+                        time += seriasTime;
                         serias++;
                     }
                 }
