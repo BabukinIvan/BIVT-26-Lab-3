@@ -1,0 +1,31 @@
+   
+            double summaryadov = 0;
+            int cnt = 0;
+            for(int i = 0; i < 10_000; i++)
+            {
+                double sum = 0;
+                for (double x = 0.1; x <= 1; x+=0.1)
+                {
+                    double maybe = Math.Pow(-1, i) * (2 * i - 3) * Math.Pow(x, i + 1) / factorial(i + 1);
+                    if (Math.Abs(maybe) >= 0.0001)
+                    {
+                        sum += maybe;
+                    }
+                    else break;
+                }
+                summaryadov += sum;
+                cnt++;
+            }
+            Console.WriteLine(summaryadov/cnt);
+            
+
+        }
+        static double factorial(double i)
+        {
+            double factorial = 1;
+            for(int j = 1; j <= i; j++)
+            {
+                factorial *= j;
+            }
+            return factorial;
+        }
