@@ -7,6 +7,14 @@
             int count = 0;
 
             // code here
+            for (int i = 0; i < n; i++)
+            {
+                double x = double.Parse(Console.ReadLine());
+                double y = double.Parse(Console.ReadLine());
+                double dx = x - a, dy = y - b;
+                if (dx * dx + dy * dy < r * r)
+                    count++;
+            }
 
             // end
 
@@ -18,6 +26,17 @@
             double length = 0;
 
             // code here
+            for (int i = 1; i <= n; i++)
+            {
+                double x = double.Parse(Console.ReadLine());
+                double y = double.Parse(Console.ReadLine());
+                double distance = Math.Sqrt(x * x + y * y);
+                if (i == 1 || distance < length)
+                {
+                    index = i;
+                    length = distance;
+                }
+            }
 
             // end
 
@@ -28,6 +47,15 @@
             int count = 0;
 
             // code here
+            while (true)
+            {
+                if (!double.TryParse(Console.ReadLine(), out double x))
+                    break;
+                if (!double.TryParse(Console.ReadLine(), out double y))
+                    break;
+                if (x >= 0 && x <= Math.PI && y >= 0 && y <= Math.Sin(x))
+                    count++;
+            }
 
             // end
 
@@ -38,6 +66,20 @@
             int score = 0;
 
             // code here
+            while (labs > 0 || cw > 0)
+            {
+                int mark = int.Parse(Console.ReadLine());
+                if (labs > 0)
+                {
+                    score += mark;
+                    labs--;
+                }
+                else
+                {
+                    score += 4 * mark;
+                    cw--;
+                }
+            }
 
             // end
 
@@ -48,6 +90,22 @@
             double area = 0;
 
             // code here
+            switch (type)
+            {
+                case 1:
+                    area = a * b;
+                    break;
+                case 2:
+                    area = Math.PI * Math.Abs(a * a - b * b);
+                    break;
+                case 3:
+                    if (2 * b > a)
+                        area = a * Math.Sqrt(b * b - a * a / 4.0) / 2;
+                    break;
+                default:
+                    area = 0;
+                    break;
+            }
 
             // end
 
